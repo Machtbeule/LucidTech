@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leistungen – LucidTech</title>
+    
+    <!-- Tailwind CSS for modern, utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font 'Inter' for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo / Brand Name -->
+                <a href="index.html" class="text-xl font-bold text-gray-900">LucidTech <span class="text-blue-600">by Tumler</span></a>
+                
+                <!-- Desktop Navigation Links -->
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a></li>
+                    <li><a href="leistungen.html" class="font-semibold text-blue-600">Leistungen</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Über mich</a></li>
+                    <li><a href="kontakt.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Kontakt</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button (optional, can be added with JS) -->
+                <button class="md:hidden text-gray-600 hover:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <span class="text-blue-600 font-semibold uppercase tracking-wider">Meine Expertise</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+                    Digitale Lösungen, die passen.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Von der Analyse Ihrer bestehenden Systeme bis zur intelligenten Automatisierung – ich biete Ihnen pragmatische und zukunftssichere IT-Lösungen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Service Card 1: IT Health Check -->
+                    <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="m10.4 12.6 1.6 1.4 3-3"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">IT Health Check</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+                            Eine umfassende Analyse Ihrer IT-Infrastruktur. Ich decke Schwachstellen und Potenziale auf und liefere Ihnen einen klaren, verständlichen Bericht mit konkreten Handlungsempfehlungen.
+                        </p>
+                        <a href="health.html" class="text-blue-600 font-semibold hover:underline mt-auto">Mehr erfahren &rarr;</a>
+                    </div>
+
+                    <!-- Service Card 2: Schnittstellen & APIs -->
+                    <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Schnittstellen & APIs</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+                            Ich verbinde Ihre verschiedenen Software-Systeme. Automatisieren Sie den Datenfluss zwischen ERP, CRM oder Webshop und eliminieren Sie fehleranfällige, manuelle Prozesse.
+                        </p>
+                        <a href="schnittstellen.html" class="text-blue-600 font-semibold hover:underline mt-auto">Mehr erfahren &rarr;</a>
+                    </div>
+
+                    <!-- Service Card 3: Smart-Office Setup -->
+                    <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Smart-Office Setup</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6 flex-grow">
+                            Machen Sie Ihr Büro intelligent. Von zentraler Licht- und Klimasteuerung bis hin zu digitalen Raumbuchungen – steigern Sie Effizienz, Komfort und sparen Sie gleichzeitig Energiekosten.
+                        </p>
+                        <a href="smart-office.html" class="text-blue-600 font-semibold hover:underline mt-auto">Mehr erfahren &rarr;</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Me Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Warum LucidTech?</h2>
+                    <p class="text-lg text-gray-600 mt-4">Mein Ansatz ist einfach, direkt und auf Ihren Erfolg ausgerichtet.</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Pragmatisch & Ehrlich</h4>
+                        <p class="text-gray-600">Ich liefere Lösungen, die funktionieren – ohne unnötigen Ballast.</p>
+                    </div>
+                    <div>
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Verständlich erklärt</h4>
+                        <p class="text-gray-600">Kein Fachchinesisch. Ich erkläre komplexe Themen auf Augenhöhe.</p>
+                    </div>
+                    <div>
+                        <div class="bg-gray-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Ein Ansprechpartner</h4>
+                        <p class="text-gray-600">Von der Beratung bis zur Umsetzung haben Sie es direkt mit mir zu tun.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="bg-blue-600 text-white rounded-2xl p-12 shadow-xl">
+                    <h2 class="text-3xl font-bold">Bereit, Ihre IT zu optimieren?</h2>
+                    <p class="text-lg text-blue-200 mt-4 max-w-2xl mx-auto">
+                        Lassen Sie uns in einem unverbindlichen Gespräch herausfinden, wo Ihre Potenziale liegen.
+                    </p>
+                    <div class="mt-8">
+                        <a href="kontakt.html" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105">
+                            Jetzt Kontakt aufnehmen
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <a href="index.html" class="text-xl font-bold text-white">LucidTech <span class="text-blue-500">by Tumler</span></a>
+                    <p class="mt-2">Ihre IT, einfach und verständlich.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="font-semibold text-white">Kontakt</p>
+                    <a href="mailto:kontakt@lucidtech.at" class="hover:text-blue-500 transition-colors">kontakt@lucidtech.at</a>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2025 LucidTech by Tumler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Health Check – LucidTech</title>
+    
+    <!-- Tailwind CSS for modern, utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font 'Inter' for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo / Brand Name -->
+                <a href="index.html" class="text-xl font-bold text-gray-900">LucidTech <span class="text-blue-600">by Tumler</span></a>
+                
+                <!-- Desktop Navigation Links -->
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a></li>
+                    <li><a href="leistungen.html" class="font-semibold text-blue-600">Leistungen</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Über mich</a></li>
+                    <li><a href="kontakt.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Kontakt</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button (optional, can be added with JS) -->
+                <button class="md:hidden text-gray-600 hover:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <span class="text-blue-600 font-semibold uppercase tracking-wider">Analyse & Optimierung</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+                    IT Health Check
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Für KMUs, die Klarheit und Sicherheit über ihre IT-Infrastruktur brauchen – ohne leere Versprechen oder teure Überraschungen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <!-- Section: What is it? -->
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Was ist ein IT Health Check?</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                           Ein IT Health Check ist eine umfassende Analyse Ihrer bestehenden IT-Systeme. Ich prüfe Ihre Server, Netzwerke, Backup-Strategien, Sicherheitssysteme und IT-Risiken auf Schwachstellen und Potenziale, um Ihnen einen klaren Überblick zu verschaffen.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl p-4">
+                        <img src="img/infra.jpg" alt="Abstrakte Darstellung einer IT-Infrastruktur mit Servern und Netzwerkknoten" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <!-- Section: What I check -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Typische Themen, die ich prüfe:</h2>
+                    <ul class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Netzwerk- und Internetstabilität</h4>
+                                <p class="text-gray-600 text-sm">Analyse von WLAN-Abdeckung, Switch-Konfiguration und Internet-Performance.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Firewall- und Zugriffsschutz</h4>
+                                <p class="text-gray-600 text-sm">Überprüfung der Sicherheitsregeln und Schutzmechanismen gegen Angriffe von aussen.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Datensicherung & Wiederherstellbarkeit</h4>
+                                <p class="text-gray-600 text-sm">Kontrolle, ob Ihre Backups vollständig sind und im Notfall auch funktionieren.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                           <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Serverstatus und Dienste</h4>
+                                 <p class="text-gray-600 text-sm">Prüfung von Auslastung, Speicherplatz und laufenden Prozessen auf Ihren Servern.</p>
+                           </div>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Benutzerverwaltung & Berechtigungen</h4>
+                                <p class="text-gray-600 text-sm">Analyse, wer worauf Zugriff hat, um Sicherheitslücken zu schliessen.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <div>
+                                <h4 class="font-semibold">Patch-Management und Softwarestand</h4>
+                                <p class="text-gray-600 text-sm">Sicherstellung, dass alle Systeme auf dem neuesten und sichersten Stand sind.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Result & Target Audience Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Was bekomme ich als Ergebnis?</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sie erhalten einen leicht verständlichen Bericht mit konkreten Empfehlungen, die auch ohne IT-Fachchinesisch umsetzbar sind. Auf Wunsch übernehme ich auch gleich die Optimierung oder begleite Ihre IT dabei.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Für wen ist das gedacht?</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Für kleine und mittlere Unternehmen in Vorarlberg, die keinen eigenen IT-Support haben – aber trotzdem eine professionelle, verlässliche Lösung wollen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="bg-blue-600 text-white rounded-2xl p-12 shadow-xl max-w-md mx-auto">
+                    <h2 class="text-3xl font-bold">Transparente Preise</h2>
+                    <p class="text-blue-200 text-lg mt-2 mb-6">
+                        Keine versteckten Kosten. Sie wissen immer, woran Sie sind.
+                    </p>
+                    <div class="bg-white text-gray-900 rounded-xl p-8 shadow-inner">
+                        <p class="font-semibold uppercase text-blue-500">IT Health Check</p>
+                        <p class="text-5xl font-bold my-3">ab 290€</p>
+                        <p class="text-gray-500 mb-4">einmalig, je nach Umfang</p>
+                        <p class="text-sm text-gray-600">Die Erstberatung via Telefon ist für Sie kostenlos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Sind Sie bereit für einen klaren Überblick?</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Sichern Sie sich jetzt Ihre kostenlose Erstberatung und lassen Sie uns über die Gesundheit Ihrer IT sprechen.
+                </p>
+                <div class="mt-10">
+                    <a href="kontakt.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        Jetzt kostenlose Beratung anfordern
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <a href="index.html" class="text-xl font-bold text-white">LucidTech <span class="text-blue-500">by Tumler</span></a>
+                    <p class="mt-2">Ihre IT, einfach und verständlich.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="font-semibold text-white">Kontakt</p>
+                    <a href="mailto:kontakt@lucidtech.at" class="hover:text-blue-500 transition-colors">kontakt@lucidtech.at</a>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2025 LucidTech by Tumler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

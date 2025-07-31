@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-Office Setup – LucidTech</title>
+    
+    <!-- Tailwind CSS for modern, utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font 'Inter' for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo / Brand Name -->
+                <a href="index.html" class="text-xl font-bold text-gray-900">LucidTech <span class="text-blue-600">by Tumler</span></a>
+                
+                <!-- Desktop Navigation Links -->
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a></li>
+                    <li><a href="leistungen.html" class="font-semibold text-blue-600">Leistungen</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Über mich</a></li>
+                    <li><a href="kontakt.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Kontakt</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button (optional, can be added with JS) -->
+                <button class="md:hidden text-gray-600 hover:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <span class="text-blue-600 font-semibold uppercase tracking-wider">Effizienz & Komfort</span>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+                    Smart-Office Setup
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Intelligente Technik für moderne Arbeitswelten – optimiert für KMUs, die ihre Effizienz steigern und Energie sparen wollen.
+                </p>
+            </div>
+        </section>
+
+        <!-- Detailed Content Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 max-w-4xl">
+                
+                <!-- Section: What is Smart Office? -->
+                <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Was bedeutet Smart-Office?</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                           Ein Smart-Office ist ein digital vernetzter Arbeitsplatz, bei dem Technik dabei hilft, Energie zu sparen, Arbeitsprozesse zu vereinfachen und den Komfort zu erhöhen. Ich kombiniere Ihre bestehenden Systeme mit smarter Infrastruktur – ohne dass es kompliziert oder teuer wird.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 rounded-2xl p-4">
+                        <img src="img/smart.jpg" alt="Modernes Büro mit intelligenter Beleuchtung und digitaler Anzeige" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <!-- Section: Typical implementations -->
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Typische Umsetzungen:</h2>
+                    <ul class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <h4 class="font-semibold">Zentrale Licht- & Raumklimasteuerung</h4>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <h4 class="font-semibold">Digitale Beschilderung & Raumbuchung</h4>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <h4 class="font-semibold">Smarter Medien- & Besprechungsraum</h4>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                           <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                           <h4 class="font-semibold">Netzwerkoptimierung & WLAN-Abdeckung</h4>
+                        </li>
+                        <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <h4 class="font-semibold">Energiemanagement & Verbrauchsüberwachung</h4>
+                        </li>
+                         <li class="flex items-start bg-white p-6 rounded-lg border border-gray-200">
+                            <svg class="w-6 h-6 text-blue-500 mr-4 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 6L9 17l-5-5"></path></svg>
+                            <h4 class="font-semibold">Smarte Steckdosen & IoT-Sensorik</h4>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Advantage & Target Audience Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Was ist mein Vorteil?</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Sie erhalten genau die Funktionen, die Ihr Betrieb braucht – ohne Abos, ohne Cloud-Zwang und ohne unnötigen Ballast. Ich erkläre es Ihnen auf Augenhöhe und setze es effizient für Sie um.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Für wen ist das gedacht?</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                           Für kleine und mittlere Unternehmen, Kanzleien, Studios oder Werkstätten, die mehr aus ihren Räumen herausholen wollen – ohne dafür grosse Investitionen tätigen zu müssen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="bg-blue-600 text-white rounded-2xl p-12 shadow-xl max-w-md mx-auto">
+                    <h2 class="text-3xl font-bold">Massgeschneiderte Setups</h2>
+                    <p class="text-blue-200 text-lg mt-2 mb-6">
+                        Jedes Büro ist anders. Sie erhalten eine Lösung, die genau auf Ihre Räume und Bedürfnisse zugeschnitten ist.
+                    </p>
+                    <div class="bg-white text-gray-900 rounded-xl p-8 shadow-inner">
+                        <p class="font-semibold uppercase text-blue-500">Smart-Office Setup</p>
+                        <p class="text-5xl font-bold my-3">ab 390€</p>
+                        <p class="text-gray-500 mb-4">für kleine Setups, je nach Umfang</p>
+                        <p class="text-sm text-gray-600">Das Erstgespräch und die Beratung sind kostenlos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Möchten Sie Ihr Büro smarter machen?</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Kontaktieren Sie mich für ein unverbindliches Gespräch. Ich zeige Ihnen gerne die Möglichkeiten auf.
+                </p>
+                <div class="mt-10">
+                    <a href="kontakt.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        Gespräch vereinbaren
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <a href="index.html" class="text-xl font-bold text-white">LucidTech <span class="text-blue-500">by Tumler</span></a>
+                    <p class="mt-2">Ihre IT, einfach und verständlich.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="font-semibold text-white">Kontakt</p>
+                    <a href="mailto:kontakt@lucidtech.at" class="hover:text-blue-500 transition-colors">kontakt@lucidtech.at</a>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2025 LucidTech by Tumler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

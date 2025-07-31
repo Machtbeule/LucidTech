@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich – LucidTech</title>
+    
+    <!-- Tailwind CSS for modern, utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Font 'Inter' for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Applying the Inter font to the whole page */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <nav class="flex justify-between items-center py-4">
+                <!-- Logo / Brand Name -->
+                <a href="index.html" class="text-xl font-bold text-gray-900">LucidTech <span class="text-blue-600">by Tumler</span></a>
+                
+                <!-- Desktop Navigation Links -->
+                <ul class="hidden md:flex items-center space-x-6">
+                    <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Home</a></li>
+                    <li><a href="leistungen.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Leistungen</a></li>
+                    <li><a href="about.html" class="font-semibold text-blue-600">Über mich</a></li>
+                    <li><a href="kontakt.html" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Kontakt</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button (optional, can be added with JS) -->
+                <button class="md:hidden text-gray-600 hover:text-gray-900">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-28 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mt-4 mb-6 leading-tight">
+                    Technik und Wirtschaft, <br class="hidden md:block"> perfekt vereint.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Mein Name ist Steven Tumler, und ich bin das Gesicht hinter LucidTech. Hier erfahren Sie mehr über meinen Weg und meine Philosophie.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Me Content Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid lg:grid-cols-5 gap-12 items-start">
+                    
+                    <!-- Left Column: Profile Picture & Info -->
+                    <div class="lg:col-span-2">
+                         <img src="https://placehold.co/800x800/e2e8f0/4a5568?text=Steven+Tumler" alt="Porträtfoto von Steven Tumler" class="rounded-2xl shadow-xl w-full h-auto object-cover aspect-square mb-8">
+                         <div class="bg-white p-6 rounded-2xl border border-gray-200">
+                            <h3 class="text-lg font-bold text-gray-900 mb-4">Kurz & Knapp</h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                                    <span><strong>Alter:</strong> 32 Jahre</span>
+                                </li>
+                                <li class="flex items-start">
+                                     <svg class="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                    <span><strong>Standort:</strong> Dornbirn, Vorarlberg</span>
+                                </li>
+                                 <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-blue-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.616V21a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h7.384m7.616 5.616a2 2 0 10-2.828-2.828L13 12l-4 4 2.828 2.828 5.793-5.793z"></path></svg>
+                                    <span><strong>Fokus:</strong> Pragmatische IT-Lösungen für KMUs</span>
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+
+                    <!-- Right Column: Story & Timeline -->
+                    <div class="lg:col-span-3">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Vom Techniker zum IT-Strategen</h2>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Meine Reise in die Welt der Technik begann nicht im Hörsaal, sondern in der Praxis. Mit einer soliden Lehre als Elektrotechniker habe ich gelernt, wie die Dinge wirklich funktionieren. Doch mein Wissensdurst war damit nicht gestillt. Ich wollte nicht nur wissen, *wie* etwas funktioniert, sondern auch *warum* – und wie man es besser machen kann.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            Dieser Antrieb führte mich über die Matura an der HTL Rankweil, wo ich meine Leidenschaft für die Informatik entdeckte, bis an die FH Dornbirn. Nach drei intensiven Semestern im berufsbegleitenden Studium der Wirtschaftsinformatik traf ich die bewusste Entscheidung, mich wieder voll auf die Praxis zu konzentrieren. Diese Kombination aus technischem Tiefgang und wirtschaftlichem Verständnis ist heute das Fundament von LucidTech. Ich spreche die Sprache der Technik und die der Unternehmer – und baue Brücken, wo andere nur Fachchinesisch sehen.
+                        </p>
+
+                        <!-- Timeline -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Mein Werdegang:</h3>
+                            <div class="relative border-l-2 border-blue-200 pl-8 space-y-12">
+                                <!-- Timeline Item 1 -->
+                                <div class="relative">
+                                    <div class="absolute -left-10 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center ring-8 ring-gray-50">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M7.788 5.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L11.44 10 7.788 6.28a.75.75 0 010-1.06z"></path></svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800">Studium Wirtschaftsinformatik</h4>
+                                    <p class="text-sm text-gray-500">FH Vorarlberg, Dornbirn (3 Semester berufsbegleitend)</p>
+                                    <p class="mt-2 text-gray-600">Einblicke in die Schnittstelle von Business-Prozessen und IT-Systemen.</p>
+                                </div>
+                                <!-- Timeline Item 2 -->
+                                <div class="relative">
+                                    <div class="absolute -left-10 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center ring-8 ring-gray-50">
+                                       <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M7.788 5.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L11.44 10 7.788 6.28a.75.75 0 010-1.06z"></path></svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800">Matura Elektrotechnik & Informatik</h4>
+                                    <p class="text-sm text-gray-500">HTL Rankweil (2. Bildungsweg)</p>
+                                    <p class="mt-2 text-gray-600">Vertiefung in Softwareentwicklung, Netzwerktechnik und Systemadministration.</p>
+                                </div>
+                                <!-- Timeline Item 3 -->
+                                <div class="relative">
+                                    <div class="absolute -left-10 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center ring-8 ring-gray-50">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M7.788 5.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L11.44 10 7.788 6.28a.75.75 0 010-1.06z"></path></svg>
+                                    </div>
+                                    <h4 class="font-semibold text-gray-800">Lehre als Elektrotechniker</h4>
+                                    <p class="text-sm text-gray-500">Regionales Unternehmen, Vorarlberg</p>
+                                    <p class="mt-2 text-gray-600">Praktische Grundlagen in Elektronik, Installation und Fehleranalyse.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Note about side business -->
+        <section class="py-20">
+            <div class="container mx-auto px-4 text-center">
+                <div class="max-w-3xl mx-auto bg-blue-50 border-l-4 border-blue-500 p-8 rounded-r-lg">
+                     <h2 class="text-2xl font-bold text-gray-900 mb-3">Transparenz ist mir wichtig</h2>
+                     <p class="text-gray-700 leading-relaxed">
+                        LucidTech betreibe ich mit voller Leidenschaft als mein Nebengewerbe. Hauptberuflich bin ich als [Ihre aktuelle Position, z.B. IT-Projektleiter] in einem etablierten Unternehmen tätig. Diese Konstellation ermöglicht es mir, flexibel und ohne den Druck großer Agenturen auf Ihre individuellen Bedürfnisse einzugehen und Ihnen stets praxisnahe und aktuelle Lösungen anzubieten.
+                     </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Habe ich Ihr Interesse geweckt?</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Ich freue mich darauf, mehr über Ihre Herausforderungen zu erfahren und gemeinsam eine passende Lösung zu finden.
+                </p>
+                <div class="mt-10">
+                    <a href="kontakt.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                        Nehmen Sie jetzt Kontakt auf
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-4 py-12">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div>
+                    <a href="#" class="text-xl font-bold text-white">LucidTech <span class="text-blue-500">by Tumler</span></a>
+                    <p class="mt-2">Ihre IT, einfach und verständlich.</p>
+                </div>
+                <div class="mt-8 md:mt-0">
+                    <p class="font-semibold text-white">Kontakt</p>
+                    <a href="mailto:kontakt@lucidtech.at" class="hover:text-blue-500 transition-colors">kontakt@lucidtech.at</a>
+                </div>
+            </div>
+            <div class="mt-10 border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2025 LucidTech by Tumler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
