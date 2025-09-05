@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Alpine.js for interactivity -->
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <style>
         body {
@@ -38,17 +38,39 @@
     <!-- Navigation Bar -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
         <div class="container mx-auto px-4">
-            <nav class="flex justify-between items-center py-4">
+            <nav class="flex justify-between items-center py-4" x-data="{ open: false }">
                 <a href="index.html" class="text-xl font-bold text-gray-900">LucidTech <span class="text-blue-600">by Tumler</span></a>
+                
+                <!-- Mobile Menu Button -->
+                <button @click="open = !open" class="md:hidden text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    <svg x-show="open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+
+                <!-- Desktop Menu -->
                 <ul class="hidden md:flex items-center space-x-6">
                     <li><a href="index.html" class="font-semibold text-blue-600">Home</a></li>
                     <li><a href="leistungen.html" class="text-gray-600 hover:text-blue-600 transition-colors">Leistungen</a></li>
                     <li><a href="about.html" class="text-gray-600 hover:text-blue-600 transition-colors">Über mich</a></li>
                     <li><a href="kontakt.html" class="text-gray-600 hover:text-blue-600 transition-colors">Kontakt</a></li>
                 </ul>
-                <button class="md:hidden text-gray-600 hover:text-gray-900">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
+
+                <!-- Mobile Menu (with Alpine.js transition) -->
+                <ul x-show="open" 
+                    x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 scale-95"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-95"
+                    id="mobile-menu"
+                    class="absolute top-16 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-lg border-t border-gray-200 py-4 px-4 md:hidden flex flex-col space-y-4 text-center">
+                    <li><a href="index.html" @click="open = false" class="block font-semibold text-blue-600 py-2">Home</a></li>
+                    <li><a href="leistungen.html" @click="open = false" class="block text-gray-600 hover:text-blue-600 py-2">Leistungen</a></li>
+                    <li><a href="about.html" @click="open = false" class="block text-gray-600 hover:text-blue-600 py-2">Über mich</a></li>
+                    <li><a href="kontakt.html" @click="open = false" class="block text-gray-600 hover:text-blue-600 py-2">Kontakt</a></li>
+                </ul>
+
             </nav>
         </div>
     </header>
@@ -99,9 +121,9 @@
                     </div>
                     <!-- Image Display -->
                     <div class="relative h-96">
-                        <img x-show="activeService === 'health'" src="img/infra.jpg" alt="[Bild von IT-Infrastruktur]" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
-                        <img x-show="activeService === 'api'" src="img/schnitt.jpg" alt="[Bild von Datenfluss-Visualisierung]" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
-                        <img x-show="activeService === 'smart'" src="img/smart.jpg" alt="[Bild von modernem Büro]" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
+                        <img x-show="activeService === 'health'" src="img/infra.jpg" alt="Visualisierung einer IT-Infrastruktur" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
+                        <img x-show="activeService === 'api'" src="img/schnitt.jpg" alt="Visualisierung eines Datenflusses" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
+                        <img x-show="activeService === 'smart'" src="img/smart.jpg" alt="Bild eines modernen Büros mit Smart-Technologie" class="absolute inset-0 w-full h-full object-cover rounded-2xl shadow-xl transition-opacity duration-300" x-transition:enter.duration.300ms x-transition:leave.duration.300ms>
                     </div>
                 </div>
             </div>
